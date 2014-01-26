@@ -32,11 +32,11 @@
 
     <h3>Live Example</h3>
     <div class="html-snippet" data-container="html">
-        <div id="index">
+        <div id="index" class="section">
         <!-- This content will show up in the "Home" tab -->
         </div>
 
-        <div id="tabs">
+        <div id="tabs" class="section">
         <!-- This content will show up in the "How to use tabs" tab -->
         </div>
     </div>
@@ -53,7 +53,7 @@ require(['$api/models'], function(models) {
         var args = models.application.arguments;
         var current = document.getElementById(args[0]);
         var sections = document.getElementsByClassName('section');
-        for (var i = 0, l = sections.length; i &lt; l; i++){
+        for (var i = 0, l = sections.length; i < l; i++){
             sections[i].style.display = 'none';
         }
         current.style.display = 'block';
